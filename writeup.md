@@ -126,7 +126,9 @@ The new transformed images concatenated with the original images and both used t
 [Deep learning neural network models learn a mapping from input variables to an output variable](https://machinelearningmastery.com/how-to-improve-neural-network-stability-and-modeling-performance-with-data-scaling/). Data preparation involves using techniques such as the normalization and standardization to rescale input and output variables prior to training a neural network model. Different ways of preprocessing are available to improve the image qualities like use gray scale and normalization. Min-max normalization is one of the most common ways to normalize data. For every feature, the minimum value of that feature gets transformed into a 0, the maximum value gets transformed into a 1, and every other value gets transformed into a decimal between 0 and 1.
 
 ```pyhton
-𝑧𝑖=𝑥𝑖−min(𝑥)/max(𝑥)−min(𝑥)
+#Normalized Data 'x'
+
+normalized (x) = (x-min(x))/(max(x)-min(x))
 ```
 
 As a first step, I decided to convert the images to grayscale because ...
