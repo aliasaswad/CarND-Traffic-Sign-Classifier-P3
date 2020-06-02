@@ -33,12 +33,25 @@ The goals / steps of this project are the following:
 [image8]: ./examples/placeholder.png "Traffic Sign 5" -->
 
 ## Project
----
+
 You could reach the project implementation [Traffic_Sign_Classifier.ipynb](https://github.com/aliasaswad/CarND-Traffic-Sign-Classifier-P3/blob/master/Traffic_Sign_Classifier.ipynb). Below, I will go through the details of the code implementation and I will discuss the results I've got.
 
 ### Step 0: Load The Data
 
-In this steps, I used pickle library to load the data. The data consist of images and labels ad a numbers for these images. The labels are used to recognize what the images represent. [signnames.cvs](https://github.com/aliasaswad/CarND-Traffic-Sign-Classifier-P3/blob/master/signnames.csv) is a file that used to map lables to names.
+In this steps, I used pickle library to load the data. The data consist of images and labels ad a numbers for these images. The labels are used to recognize what the images represent. [signnames.cvs](https://github.com/aliasaswad/CarND-Traffic-Sign-Classifier-P3/blob/master/signnames.csv) is a file that used to map lables to names, for example:
+
+```python
+0: 'Speed limit (20km/h)',
+ 1: 'Speed limit (30km/h)',
+ 2: 'Speed limit (50km/h)',
+ 3: 'Speed limit (60km/h)',
+ 4: 'Speed limit (70km/h)',
+ 5: 'Speed limit (80km/h)',
+ 6: 'End of speed limit (80km/h)',
+ 7: 'Speed limit (100km/h)',
+ 8: 'Speed limit (120km/h)',
+ 9: 'No passing',
+```
 
 ### Data Set Summary & Exploration
 
