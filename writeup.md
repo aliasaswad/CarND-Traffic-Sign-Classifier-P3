@@ -67,15 +67,13 @@ I used the [pandas library](https://pandas.pydata.org/pandas-docs/stable/referen
 
 Here is an exploratory visualization of the dataset that randomly selected from 43 different images.
 
-<img src="./results_images/0_traffic_signs_class.jpg" width="500" height="300" align="center"/>
+<img src="./results_images/1_explored_images.jpg" width="500" height="300" align="center"/>
 
 Also, the below figures show how the labels are distribute
 
 <img src="./results_images/2_labels_histo.jpg" width="500" height="300" align="center"/>
 
-
-![alt text][image1]
-
+    
 ### Design and Test a Model Architecture
 
 #### 1. Describe how you preprocessed the image data. What techniques were chosen and why did you choose these techniques? Consider including images showing the output of each preprocessing technique. Pre-processing refers to techniques such as converting to grayscale, normalization, etc. (OPTIONAL: As described in the "Stand Out Suggestions" part of the rubric, if you generated additional data for training, describe why you decided to generate additional data, how you generated the data, and provide example images of the additional data. Then describe the characteristics of the augmented training set like number of images in the set, number of images for each class, etc.)
