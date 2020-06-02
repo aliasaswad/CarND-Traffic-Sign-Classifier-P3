@@ -3,10 +3,9 @@
 ## Writeup
 
 <!-- ![Traffic Signs](./results_images/00_traffic_signs.jpg) -->
-<img src="./results_images/1_explored_images.jpg" width="500" height="300" align="center"/>
-<!-- |<img src="./results_images/00_traffic_signs.jpg" width="500" height="300" align="center"/>
+|<img src="./results_images/00_traffic_signs.jpg" width="500" height="300" align="center"/>
 |:--:| 
-|*German Signs Image*| -->
+|*German Signs Image*|
 
 
 ## Build a Traffic Sign Recognition Project
@@ -35,9 +34,9 @@ The goals / steps of this project are the following:
 
 [//]: # (Image References)
 
-[img1]:  ./results_images/1_explored_images.jpg       "Explored_images"
-[img2]:  ./results_images/2_labels_histo.jpg          "Labels Dist."
-[img3]:  ./results_images/3_data_augmentation.jpg     "Image Processing"
+[img1]:  ./results_images/1_explored_images.png       "Explored_images"
+[img2]:  ./results_images/2_labels_histo.png          "Labels Dist."
+[img3]:  ./results_images/3_data_augmentation.png     "Image Processing"
 [img4]:  ./results_images/4_train_augmented_histo.png "Train Processed Imgs"
 [img5]:  ./results_images/5_preprocess.png            "Preprocess"
 [img6]:  ./results_images/6_train_accu_loss.png       "Train, Accu., loss"
