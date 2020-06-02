@@ -4,9 +4,9 @@
 
 <!-- ![Traffic Signs](./results_images/00_traffic_signs.jpg) -->
 <img src="./results_images/1_explored_images.jpg" width="500" height="300" align="center"/>
-|<img src="./results_images/00_traffic_signs.jpg" width="500" height="300" align="center"/>
+<!-- |<img src="./results_images/00_traffic_signs.jpg" width="500" height="300" align="center"/>
 |:--:| 
-|*German Signs Image*|
+|*German Signs Image*| -->
 
 
 ## Build a Traffic Sign Recognition Project
