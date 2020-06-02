@@ -67,11 +67,11 @@ I used the [pandas library](https://pandas.pydata.org/pandas-docs/stable/referen
 
 Here is an exploratory visualization of the dataset that randomly selected from 43 different images.
 
-<img src="./results_images/1_explored_images.jpg" width="500" height="300" align="center"/>
+<img src="./results_images/1_explored_images.jpg" width="500" height="300"/>
 
 Also, the below figures show how the labels are distribute
 
-<img src="./results_images/2_labels_histo.jpg" width="500" height="300" align="center"/>
+<img src="./results_images/2_labels_histo.jpg" width="500" height="300"/>
 
     
 ### Design and Test a Model Architecture
