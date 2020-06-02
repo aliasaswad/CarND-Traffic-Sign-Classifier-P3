@@ -10,8 +10,8 @@
 
 ## Build a Traffic Sign Recognition Project
 
-    ### Deep Learning
-
+### Deep Learning
+<img src="./results_images/1_explored_images.jpg" width="500" height="300" align="center"/>
 The goals / steps of this project are the following:
 * Load the data set (see below for links to the project data set)
 * Explore, summarize and visualize the data set
