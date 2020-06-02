@@ -3,6 +3,7 @@
 ## Writeup
 
 <!-- ![Traffic Signs](./results_images/00_traffic_signs.jpg) -->
+<img src="./results_images/1_explored_images.jpg" width="500" height="300" align="center"/>
 |<img src="./results_images/00_traffic_signs.jpg" width="500" height="300" align="center"/>
 |:--:| 
 |*German Signs Image*|
@@ -11,7 +12,7 @@
 ## Build a Traffic Sign Recognition Project
 
 ### Deep Learning
-<img src="./results_images/1_explored_images.jpg" width="500" height="300" align="center"/>
+
 The goals / steps of this project are the following:
 * Load the data set (see below for links to the project data set)
 * Explore, summarize and visualize the data set
