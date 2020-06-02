@@ -23,7 +23,7 @@ The goals / steps of this project are the following:
 
 <!-- [//]: # (Image References)
 
-[image1]: ./examples/visualization.jpg "Visualization"
+[image1]: ./results_images/ "Visualization"
 [image2]: ./examples/grayscale.jpg "Grayscaling"
 [image3]: ./examples/random_noise.jpg "Random Noise"
 [image4]: ./examples/placeholder.png "Traffic Sign 1"
@@ -31,6 +31,19 @@ The goals / steps of this project are the following:
 [image6]: ./examples/placeholder.png "Traffic Sign 3"
 [image7]: ./examples/placeholder.png "Traffic Sign 4"
 [image8]: ./examples/placeholder.png "Traffic Sign 5" -->
+
+[//]: # (Image References)
+
+[img1]:  ./results_images/1_explored_images.jpg       "Explored_images"
+[img2]:  ./results_images/2_labels_histo.jpg          "Labels Dist."
+[img3]:  ./results_images/3_data_augmentation.jpg     "Image Processing"
+[img4]:  ./results_images/4_train_augmented_histo.png "Train Processed Imgs"
+[img5]:  ./results_images/5_preprocess.png            "Preprocess"
+[img6]:  ./results_images/6_train_accu_loss.png       "Train, Accu., loss"
+[img7]:  ./results_images/7_web_images.png            "Web Images"
+[img8]:  ./results_images/8_preprocess_web_images.png "Preprocess W_images"
+[img9]:  ./results_images/9_web_images_class.png      "W_images classi."
+[img10]: ./results_images/10_web_images_predict.png   "W_images predict"
 
 ## Project
 
@@ -67,11 +80,11 @@ I used the [pandas library](https://pandas.pydata.org/pandas-docs/stable/referen
 
 Here is an exploratory visualization of the dataset that randomly selected from 43 different images.
 
-<img src="./results_images/1_explored_images.jpg" width="500" height="300"/>
+![alt text][img1]
 
 Also, the below figures show how the labels are distribute
 
-<img src="./results_images/2_labels_histo.jpg" width="500" height="300"/>
+![alt text][img2]
 
     
 ### Design and Test a Model Architecture
