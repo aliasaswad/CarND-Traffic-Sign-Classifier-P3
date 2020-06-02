@@ -3,7 +3,7 @@
 ## Writeup
 
 <!-- ![Traffic Signs](./results_images/00_traffic_signs.jpg) -->
-<center>|<img src="./results_images/00_traffic_signs.jpg" width="500" height="250" align="center"/><center/>
+|<center><img src="./results_images/00_traffic_signs.jpg" width="500" height="300" align="center"/><center/>
 |:--:| 
 |*German Signs Image*|
 
