@@ -86,6 +86,13 @@ Also, the below figures show how the labels are distribute
 
 ![alt text][img2]
 
+#### Data Augmentation
+
+In order to have more images to train out the model, I used applied image on the images and concatenate those images to the original images. The process called [data augmentation](https://www.techopedia.com/definition/28033/data-augmentation). The new images created from the original data by using image transformation (image processing). The transformation used were translation, resizing, and rotation as in the below images.
+
+![alt text][img3]
+
+
     
 ### Design and Test a Model Architecture
 
