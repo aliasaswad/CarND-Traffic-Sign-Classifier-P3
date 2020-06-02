@@ -2,8 +2,8 @@
 
 ## Writeup
 
-![Traffic Signs](./results_images/00_traffic_signs.jpg)
-
+<!-- ![Traffic Signs](./results_images/00_traffic_signs.jpg) -->
+<img src="./results_images/00_traffic_signs.jpg" width="500"/>
 
 
 **Build a Traffic Sign Recognition Project**
