@@ -88,9 +88,36 @@ Also, the below figures show how the labels are distribute
 
 #### Data Augmentation
 
-In order to have more images to train out the model, I used applied image on the images and concatenate those images to the original images. The process called [data augmentation](https://www.techopedia.com/definition/28033/data-augmentation). The new images created from the original data by using image transformation (image processing). The transformation used were translation, resizing, and rotation as in the below images.
+In order to have more images to train out the model, I used applied image on the images and concatenate those images to the original images. The process called [data augmentation](https://www.techopedia.com/definition/28033/data-augmentation). The new images created from the original data by using image transformation (image processing). Four types of transformation were used, translation, resizing, and rotation.
+
+```python
+def image_process(image, process = 0):
+    """
+    Applying image processing like scale, transform, and translation.
+    We need it when the training data is complex and have a few samples.
+    """
+    # Scale
+    if process == 1:
+        fx = 1.5; fy = 1.5
+        return cv2.resize(image,None,fx=fx, fy=fy, interpolation = cv2.INTER_CUBIC)[0:32, 0:32,:]
+    # Translation
+    if process == 0: 
+        X = 5; Y = 5
+        P = np.float32([[1,0,Y],[0,1,X]])
+    else:
+        angle = 45
+        P = cv2.getRotationMatrix2D((16,16),angle,1)
+    
+    return cv2.warpAffine(image,P,(32,32))
+```
+
+A sample from the output images as below
 
 ![alt text][img3]
+
+The new transformed images concatenated with the original images and both used to train the model which provided even more distribution as shown below
+
+![alt text][img4]
 
 
     
