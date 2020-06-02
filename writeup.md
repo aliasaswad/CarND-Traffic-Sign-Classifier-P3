@@ -41,34 +41,38 @@ You could reach the project implementation [Traffic_Sign_Classifier.ipynb](https
 In this steps, I used pickle library to load the data. The data consist of images and labels ad a numbers for these images. The labels are used to recognize what the images represent. [signnames.cvs](https://github.com/aliasaswad/CarND-Traffic-Sign-Classifier-P3/blob/master/signnames.csv) is a file that used to map lables to names, for example:
 
 ```python
-0: 'Speed limit (20km/h)',
- 1: 'Speed limit (30km/h)',
- 2: 'Speed limit (50km/h)',
- 3: 'Speed limit (60km/h)',
- 4: 'Speed limit (70km/h)',
- 5: 'Speed limit (80km/h)',
- 6: 'End of speed limit (80km/h)',
- 7: 'Speed limit (100km/h)',
- 8: 'Speed limit (120km/h)',
- 9: 'No passing',
+label         name
+
+ 0:    'Speed limit (20km/h)',
+ 1:    'Speed limit (30km/h)',
+ 2:    'Speed limit (50km/h)',
+ 3:    'Speed limit (60km/h)',
+ 4:    'Speed limit (70km/h)',
+ 5:    'Speed limit (80km/h)',
+ 6:    'End of speed limit (80km/h)',
+ 7:    'Speed limit (100km/h)',
+ 8:    'Speed limit (120km/h)',
+ 9:    'No passing',
 ```
 
-### Data Set Summary & Exploration
+### Step 1: Data Set Summary & Exploration
 
-#### 1. Provide a basic summary of the data set. In the code, the analysis should be done using python, numpy and/or pandas methods rather than hardcoding results manually.
+I used the [pandas library](https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.shape.html) to calculate summary statistics of the traffic signs data set:
 
-I used the pandas library to calculate summary statistics of the traffic
-signs data set:
+* Number of training examples = 34799
+* Number of validation examples = 4410
+* Number of testing examples = 12630
+* Image data shape = (32, 32, 3)
+* The number of unique classes/labels in the data set = 43
 
-* The size of training set is ?
-* The size of the validation set is ?
-* The size of test set is ?
-* The shape of a traffic sign image is ?
-* The number of unique classes/labels in the data set is ?
+Here is an exploratory visualization of the dataset that randomly selected from 43 different images.
 
-#### 2. Include an exploratory visualization of the dataset.
+<img src="./results_images/0_traffic_signs_class.jpg" width="500" height="300" align="center"/>
 
-Here is an exploratory visualization of the data set. It is a bar chart showing how the data ...
+Also, the below figures show how the labels are distribute
+
+<img src="./results_images/2_labels_histo.jpg" width="500" height="300" align="center"/>
+
 
 ![alt text][image1]
 
