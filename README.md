@@ -9,7 +9,6 @@ In this project, I used what I've learned about deep neural networks and convolu
 
 A [detailed writeup](https://github.com/aliasaswad/CarND-Traffic-Sign-Classifier-P3/blob/master/writeup_template.md) of the project avaiable, that explain step by step what I had done.
 
-**The prerequisites** To run this project, it's require to install [Miniconda](https://docs.conda.io/en/latest/miniconda.html).
 
 The Project
 ---
@@ -22,4 +21,13 @@ The goals / steps of this project are the following:
 * Summarize the results with a written report
 
 
+Prerequisites
+---
+### TensorFlow
 
+Throughout this project, I applied knowledge of neural networks on real datasets using [TensorFlow](https://www.tensorflow.org/), an open source Deep Learning library created by Google.
+
+I used TensorFlow to classify images from the [German Traffic Sign Dataset](http://benchmark.ini.rub.de/?section=gtsrb&subsection=dataset) - a dataset of is a multi-class, single-image classification of traffic signs.
+
+**Prerequisites**
+Intro to TensorFlow requires [Python 3.4](https://www.python.org/downloads/) or higher and [Anaconda](https://www.anaconda.com/products/individual). If you don't meet all of these requirements, please install the appropriate package(s).
