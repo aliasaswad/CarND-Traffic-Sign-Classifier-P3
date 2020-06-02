@@ -8,7 +8,9 @@
 |*German Signs Image*|
 
 
-### Build a Traffic Sign Recognition Project
+## Build a Traffic Sign Recognition Project
+
+    ### Deep Learning
 
 The goals / steps of this project are the following:
 * Load the data set (see below for links to the project data set)
@@ -29,6 +31,14 @@ The goals / steps of this project are the following:
 [image6]: ./examples/placeholder.png "Traffic Sign 3"
 [image7]: ./examples/placeholder.png "Traffic Sign 4"
 [image8]: ./examples/placeholder.png "Traffic Sign 5" -->
+
+## Project
+---
+You could reach the project implementation [Traffic_Sign_Classifier.ipynb](https://github.com/aliasaswad/CarND-Traffic-Sign-Classifier-P3/blob/master/Traffic_Sign_Classifier.ipynb). Below, I will go through the details of the code implementation and I will discuss the results I've got.
+
+### Step 0: Load The Data
+
+In this steps, I used pickle library to load the data. The data consist of images and labels ad a numbers for these images. The labels are used to recognize what the images represent. [signnames.cvs](https://github.com/aliasaswad/CarND-Traffic-Sign-Classifier-P3/blob/master/signnames.csv) is a file that used to map lables to names.
 
 ### Data Set Summary & Exploration
 
