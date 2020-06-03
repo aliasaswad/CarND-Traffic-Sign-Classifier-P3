@@ -196,6 +196,18 @@ Here are five German traffic signs that I found on the web:
 
 ![alt text][img7]
 
+And, here is the images after applying the preprocess;
+
+![alt text][img8]
+
+An image histogram is a gray-scale value distribution showing the frequency of occurrence of each gray-level value. The output distribution value for the five images shown below:
+
+![alt text][img9]
+
+Four out of the five images were classified correctly. That make the network 80% accurate on this images:
+
+![alt text][img10]
+
 The first image might be difficult to classify because ...
 
 #### 2. Discuss the model's predictions on these new traffic signs and compare the results to predicting on the test set. At a minimum, discuss what the predictions were, the accuracy on these new predictions, and compare the accuracy to the accuracy on the test set (OPTIONAL: Discuss the results in more detail as described in the "Stand Out Suggestions" part of the rubric).
