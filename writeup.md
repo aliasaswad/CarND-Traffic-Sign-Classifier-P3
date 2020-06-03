@@ -229,8 +229,8 @@ For each of the new images, I printed out the model's softmax probabilities to s
 Looking at the softmax probabilities for each prediction. Below are the top 5 softmax probabilities for each image along with the sign type of each probability. 
 For the **first image** (Speed 60km/h), the model is relatively sure that this is a stop sign (probability of 0.999898), and the image does contain a Speed limit (60km/h). The top five soft max probabilities were
 
-| Probability         		|     Prediction	        								| 
-|:-------------------------:|:---------------------------------------------------------:| 
+| Probability         		|     Prediction	        							| 
+|:-------------------------:|:-----------------------------------------------------:| 
 | 0.999898         			| Speed limit (60km/h)  								| 
 | 0.000067     				| Speed limit (50km/h) 									|
 | 0.000033					| No passing											|
