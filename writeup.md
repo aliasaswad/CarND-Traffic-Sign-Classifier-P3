@@ -204,7 +204,7 @@ An image histogram is a gray-scale value distribution showing the frequency of o
 
 ![alt text][img9]
 
-The output images from the neural network as shown below:
+The model was able to correctly guess 4 of the 5 traffic signs, which gives an accuracy of ***80%***. The output images from the neural network as shown below:
 
 ![alt text][img10]
 
@@ -221,7 +221,10 @@ Here are the results of the prediction:
 | Road Work		| General Caution		|
 
 
-The model was able to correctly guess 4 of the 5 traffic signs, which gives an accuracy of 80%.
+
+For each of the new images, I printed out the model's softmax probabilities to show the certainty of the model's predictions (the top 5 probabilities for each image). `tf.nn.top_k` used to find the top k predictions for each image. `tf.nn.top_k` will return the values and indices (class ids) of the top `k` predictions. So if ***k=5***, for each sign, it'll return the **5** largest probabilities (out of a possible 43) and the correspoding class ids.
+
+#### Softmax results
 
 Looking at the softmax probabilities for each prediction. Below are the top 5 softmax probabilities for each image along with the sign type of each probability. 
 For the **first image** (Speed 60km/h), the model is relatively sure that this is a stop sign (probability of 0.999898), and the image does contain a Speed limit (60km/h). The top five soft max probabilities were
@@ -279,9 +282,4 @@ Prob.:
    0.000000 : 26 - Traffic signals
 
 ```
-
-
-### (Optional) Visualizing the Neural Network (See Step 4 of the Ipython notebook for more details)
-#### 1. Discuss the visual output of your trained network's feature maps. What characteristics did the neural network use to make classifications?
-
 
