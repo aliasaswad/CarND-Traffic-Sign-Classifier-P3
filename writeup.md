@@ -128,13 +128,13 @@ The new transformed images concatenated with the original images and both used t
 
 As a first step, I decided to convert the images to grayscale
 
-```pyhton
+```python
   # RGB to gray scale
   gray = cv2.cvtColor(img, cv2.COLOR_RGB2GRAY)
 ```
 As a last step, I normalized the image data
 
-```pyhton
+```python
   # Normalized Data 'x'
   normalized (x) = (x-min(x))/(max(x)-min(x))
 ```
