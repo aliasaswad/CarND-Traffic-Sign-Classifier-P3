@@ -58,7 +58,7 @@ label         name
  .
  .
  .
- 42:
+ 42:   'End of no passing by vehicles over 3.5 metric tons'
 ```
 
 ### Step 1: Data Set Summary & Exploration
