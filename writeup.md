@@ -204,7 +204,7 @@ An image histogram is a gray-scale value distribution showing the frequency of o
 
 ![alt text][img9]
 
-Four out of the five images were classified correctly. That make the network 80% accurate on this images:
+The output images from the neural network as shown below:
 
 ![alt text][img10]
 
@@ -218,27 +218,68 @@ Here are the results of the prediction:
 | Stop Sign 	| Stop 					|
 | Yield Sign	| Yield					|
 | Left Turn		| Turn Left				|
-| Road Work		| general Caution		|
+| Road Work		| General Caution		|
 
 
-The model was able to correctly guess 4 of the 5 traffic signs, which gives an accuracy of 80%. This compares favorably to the accuracy on the test set of ...
+The model was able to correctly guess 4 of the 5 traffic signs, which gives an accuracy of 80%.
 
-#### 3. Describe how certain the model is when predicting on each of the five new images by looking at the softmax probabilities for each prediction. Provide the top 5 softmax probabilities for each image along with the sign type of each probability. (OPTIONAL: as described in the "Stand Out Suggestions" part of the rubric, visualizations can also be provided such as bar charts)
+Looking at the softmax probabilities for each prediction. Below are the top 5 softmax probabilities for each image along with the sign type of each probability. 
+For the **first image** (Speed 60km/h), the model is relatively sure that this is a stop sign (probability of 0.999898), and the image does contain a Speed limit (60km/h). The top five soft max probabilities were
 
-The code for making predictions on my final model is located in the 11th cell of the Ipython notebook.
-
-For the first image, the model is relatively sure that this is a stop sign (probability of 0.6), and the image does contain a stop sign. The top five soft max probabilities were
-
-| Probability         	|     Prediction	        					| 
-|:---------------------:|:---------------------------------------------:| 
-| .60         			| Stop sign   									| 
-| .20     				| U-turn 										|
-| .05					| Yield											|
-| .04	      			| Bumpy Road					 				|
-| .01				    | Slippery Road      							|
+| Probability         		|     Prediction	        								| 
+|:-------------------------:|:---------------------------------------------------------:| 
+| 0.999898         			| Speed limit (60km/h)  								| 
+| 0.000067     				| Speed limit (50km/h) 									|
+| 0.000033					| No passing											|
+| 0.000002	      			| No passing for vehicles over 3.5 metric tons			|
+| 0.000000				    | No passing for vehicles over 3.5 metric tons  		|
 
 
-For the second image ... 
+And here are the softmax probabilities for the five images:
+
+```python
+Image: web_images/60_kmh.jpg
+Prob.:
+   0.999898 : 3 - Speed limit (60km/h)
+   0.000067 : 2 - Speed limit (50km/h)
+   0.000033 : 9 - No passing
+   0.000002 : 10 - No passing for vehicles over 3.5 metric tons
+   0.000000 : 5 - Speed limit (80km/h)
+
+Image: web_images/stop_sign.jpg
+Prob.:
+   0.420991 : 14 - Stop
+   0.207210 : 36 - Go straight or right
+   0.157999 : 1 - Speed limit (30km/h)
+   0.083189 : 42 - End of no passing by vehicles over 3.5 metric tons
+   0.060813 : 38 - Keep right
+
+Image: web_images/yield_sign.jpg
+Prob.:
+   1.000000 : 13 - Yield
+   0.000000 : 8 - Speed limit (120km/h)
+   0.000000 : 2 - Speed limit (50km/h)
+   0.000000 : 26 - Traffic signals
+   0.000000 : 12 - Priority road
+
+Image: web_images/left_turn.jpg
+Prob.:
+   1.000000 : 34 - Turn left ahead
+   0.000000 : 28 - Children crossing
+   0.000000 : 14 - Stop
+   0.000000 : 36 - Go straight or right
+   0.000000 : 37 - Go straight or left
+
+Image: web_images/road_work.jpg
+Prob.:
+   1.000000 : 18 - General caution
+   0.000000 : 19 - Dangerous curve to the left
+   0.000000 : 27 - Pedestrians
+   0.000000 : 28 - Children crossing
+   0.000000 : 26 - Traffic signals
+
+```
+
 
 ### (Optional) Visualizing the Neural Network (See Step 4 of the Ipython notebook for more details)
 #### 1. Discuss the visual output of your trained network's feature maps. What characteristics did the neural network use to make classifications?
