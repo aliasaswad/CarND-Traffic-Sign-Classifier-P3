@@ -212,13 +212,13 @@ The only image that the model was unable to predict was the road work sign.
 
 Here are the results of the prediction:
 
-| Image			        |     Prediction	        					| 
-|:---------------------:|:---------------------------------------------:| 
-| Stop Sign      		| Stop sign   									| 
-| U-turn     			| U-turn 										|
-| Yield					| Yield											|
-| 100 km/h	      		| Bumpy Road					 				|
-| Slippery Road			| Slippery Road      							|
+| Image			|     Prediction		| 
+|:-------------:|:---------------------:| 
+| 60 km/h		| Speed Limit (60km/h)	| 
+| Stop Sign 	| Stop 					|
+| Yield Sign	| Yield					|
+| Left Turn		| Turn Left				|
+| Road Work		| general Caution		|
 
 
 The model was able to correctly guess 4 of the 5 traffic signs, which gives an accuracy of 80%. This compares favorably to the accuracy on the test set of ...
