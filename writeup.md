@@ -146,7 +146,7 @@ Here is an example of a traffic sign image after grayscaling and normalization.
 
 #### Model architecture 
 
-I used [LeNet](http://yann.lecun.com/exdb/lenet/), , convolutional neural networks (Yann LeCun, 1998) for my model architecture. This model was designed for hand written and machine printed character recognition. So, the model could be a good fit for the traffic sign classification. To improve the accuracy for the model to work with traffic signs, I maked the first two convolution layer deeper, also increase the size of the fully-connected layers. In addition two dropout layers were added. The new architecture that I applied makes accuracy above %95. The final model consisted of the following layers:
+I used [LeNet](http://yann.lecun.com/exdb/lenet/), convolutional neural networks (Yann LeCun, 1998) for my model architecture. I implemented the LeNet architecture using TensorFlow. This model was designed for hand written and machine printed character recognition. So, the model could be a good fit for the traffic sign classification. To improve the accuracy for the model to work with traffic signs, I maked the first two convolution layer deeper, also increase the size of the fully-connected layers. In addition two dropout layers were added. The new architecture that I applied makes accuracy above %95. The final model consisted of the following layers:
 
 | Layer         		|     Description	        				| 
 |:---------------------:|:-----------------------------------------:| 
@@ -165,13 +165,22 @@ I used [LeNet](http://yann.lecun.com/exdb/lenet/), , convolutional neural networ
 | RELU					|											|
 | Dropout				|											|
 | Fully connected 3		| 43										|
-| Softmax				| etc.        								|
- 
 
 
-#### 3. Describe how you trained your model. The discussion can include the type of optimizer, the batch size, number of epochs and any hyperparameters such as learning rate.
+#### Train, Validate and Test the Model
 
-To train the model, I used an ....
+To train the model, I setup TensorFlow with `EPOCH = 40` and `BATCH_SIZE = 128` values. The `EPOCH` and `BATCH_SIZE` values affect the training speed and model accuracy. The LeNet architecture accepts a 32x32xC image as input, where C is the number of color channels. Train the LeNet archi. model to classify traffic signs data set. `x` is a placeholder for a batch of input images. `y` is a placeholder for a batch of output labels.
+
+```python
+x = tf.placeholder(tf.float32, (None, 32, 32, 1))
+y = tf.placeholder(tf.int32, (None))
+one_hot_y = tf.one_hot(y, 10)
+```
+Created a training pipeline that uses the model to classify the data set with learning rate equal to 0.001.
+Here is my accuracy to epochs relation and loss calculation:
+
+![alt text][img6]
+
 
 #### 4. Describe the approach taken for finding a solution and getting the validation set accuracy to be at least 0.93. Include in the discussion the results on the training, validation and test sets and where in the code these were calculated. Your approach may have been an iterative process, in which case, outline the steps you took to get to the final solution and why you chose those steps. Perhaps your solution involved an already well known implementation or architecture. In this case, discuss why you think the architecture is suitable for the current problem.
 
