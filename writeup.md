@@ -141,7 +141,7 @@ As a last step, I normalized the image data
 I decided to generate additional data and concatenate them to the original data set.
 Here is an example of a traffic sign image after grayscaling and normalization.
 
-![alt text][img4]
+![alt text][img5]
 
 
 #### 2. Describe what your final model architecture looks like including model type, layers, layer sizes, connectivity, etc.) Consider including a diagram and/or table describing the final model.
