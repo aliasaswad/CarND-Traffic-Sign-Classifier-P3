@@ -146,19 +146,26 @@ Here is an example of a traffic sign image after grayscaling and normalization.
 
 #### Model architecture 
 
-I used [LeNet](http://yann.lecun.com/exdb/lenet/) for my model architecture. This model was designed for hand written and machine printed character recognition. So, the model could be a good fit for the traffic sign classification. To improve the accuracy for the model to work with traffic signs, I maked the first two convolution layer deeper, also increase the size of the fully-connected layers. In addition two dropout layers were added. The new architecture that I applied makes accuracy above %95. The final model consisted of the following layers:
+I used [LeNet](http://yann.lecun.com/exdb/lenet/), , convolutional neural networks (Yann LeCun, 1998) for my model architecture. This model was designed for hand written and machine printed character recognition. So, the model could be a good fit for the traffic sign classification. To improve the accuracy for the model to work with traffic signs, I maked the first two convolution layer deeper, also increase the size of the fully-connected layers. In addition two dropout layers were added. The new architecture that I applied makes accuracy above %95. The final model consisted of the following layers:
 
-| Layer         		|     Description	        					| 
-|:---------------------:|:---------------------------------------------:| 
-| Input         		| 32x32x3 RGB image   							| 
-| Convolution 3x3     	| 1x1 stride, same padding, outputs 32x32x64 	|
-| RELU					|												|
-| Max pooling	      	| 2x2 stride,  outputs 16x16x64 				|
-| Convolution 3x3	    | etc.      									|
-| Fully connected		| etc.        									|
-| Softmax				| etc.        									|
-|						|												|
-|						|												|
+| Layer         		|     Description	        				| 
+|:---------------------:|:-----------------------------------------:| 
+| Input         		| 32x32x3 RGB image   						| 
+| Convolution 1     	| 1x1 stride, same padding, outputs 28x28x16|
+| RELU					|											|
+| Max pooling	      	| 2x2 stride,  outputs 14x14x64 			|
+| Convolution 2 	    | 1x1 stride, same padding, outputs 10x10x64|
+| RELU					|											|
+| Max pooling	      	| 2x2 stride,  outputs 5x5x64   			|
+| Fatten					|										|
+| Fully-connected 1		| 1600 										|
+| RELU					|											|
+| Dropout					|										|
+| Fully-connected 2		| 240										|
+| RELU					|											|
+| Dropout				|											|
+| Fully connected 3		| 43										|
+| Softmax				| etc.        								|
  
 
 
