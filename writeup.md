@@ -130,7 +130,7 @@ As a first step, I decided to convert the images to grayscale
 
 ```pyhton
   # RGB to gray scale
-  gray = cv2.cvtColor(cv2.cvtColor(img, cv2.COLOR_RGB2GRAY), cv2.COLOR_GRAY2RGB)
+  gray = cv2.cvtColor(img, cv2.COLOR_RGB2GRAY)
 ```
 As a last step, I normalized the image data
 
