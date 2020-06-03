@@ -208,9 +208,7 @@ Four out of the five images were classified correctly. That make the network 80%
 
 ![alt text][img10]
 
-The first image might be difficult to classify because ...
-
-#### 2. Discuss the model's predictions on these new traffic signs and compare the results to predicting on the test set. At a minimum, discuss what the predictions were, the accuracy on these new predictions, and compare the accuracy to the accuracy on the test set (OPTIONAL: Discuss the results in more detail as described in the "Stand Out Suggestions" part of the rubric).
+The only image that the model was unable to predict was the road work sign.
 
 Here are the results of the prediction:
 
