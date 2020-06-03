@@ -20,18 +20,6 @@ The goals / steps of this project are the following:
 * Analyze the softmax probabilities of the new images
 * Summarize the results with a written report
 
-
-<!-- [//]: # (Image References)
-
-[image1]: ./results_images/ "Visualization"
-[image2]: ./examples/grayscale.jpg "Grayscaling"
-[image3]: ./examples/random_noise.jpg "Random Noise"
-[image4]: ./examples/placeholder.png "Traffic Sign 1"
-[image5]: ./examples/placeholder.png "Traffic Sign 2"
-[image6]: ./examples/placeholder.png "Traffic Sign 3"
-[image7]: ./examples/placeholder.png "Traffic Sign 4"
-[image8]: ./examples/placeholder.png "Traffic Sign 5" -->
-
 [//]: # (Image References)
 
 [img1]:  ./results_images/1_explored_images.png       "Explored_images"
@@ -66,6 +54,11 @@ label         name
  7:    'Speed limit (100km/h)',
  8:    'Speed limit (120km/h)',
  9:    'No passing',
+ .
+ .
+ .
+ .
+ 42:
 ```
 
 ### Step 1: Data Set Summary & Exploration
