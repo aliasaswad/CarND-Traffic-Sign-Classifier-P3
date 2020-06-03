@@ -123,7 +123,10 @@ The new transformed images concatenated with the original images and both used t
     
 ### Step 2: Design and Test a Model Architecture
 
-[Deep learning neural network models learn a mapping from input variables to an output variable](https://machinelearningmastery.com/how-to-improve-neural-network-stability-and-modeling-performance-with-data-scaling/). Data preparation involves using techniques such as the normalization and standardization to rescale input and output variables prior to training a neural network model. Different ways of preprocessing are available to improve the image qualities like use gray scale and normalization. Min-max normalization is one of the most common ways to normalize data. For every feature, the minimum value of that feature gets transformed into a 0, the maximum value gets transformed into a 1, and every other value gets transformed into a decimal between 0 and 1.
+[Deep learning neural network models learn a mapping from input variables to an output variable](https://machinelearningmastery.com/how-to-improve-neural-network-stability-and-modeling-performance-with-data-scaling/). Data preparation involves using techniques such as the normalization and standardization to rescale input and output variables prior to training a neural network model. Different ways of preprocessing are available to improve the image qualities like use gray scale and normalization.
+
+As a first step, I decided to convert the images to grayscale and second I applied min-max normalization.
+Min-max normalizationis one of the most common ways to normalize data. For every feature, the minimum value of that feature gets transformed into a 0, the maximum value gets transformed into a 1, and every other value gets transformed into a decimal between 0 and 1.
 
 ```pyhton
 #Normalized Data 'x'
@@ -131,9 +134,11 @@ The new transformed images concatenated with the original images and both used t
 normalized (x) = (x-min(x))/(max(x)-min(x))
 ```
 
-As a first step, I decided to convert the images to grayscale because ...
+Here is an example of a traffic sign image after grayscaling and normalization.
 
-Here is an example of a traffic sign image before and after grayscaling.
+![alt text][img5]
+
+
 
 ![alt text][image2]
 
