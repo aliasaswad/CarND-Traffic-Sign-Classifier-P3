@@ -144,9 +144,9 @@ Here is an example of a traffic sign image after grayscaling and normalization.
 ![alt text][img5]
 
 
-#### 2. Describe what your final model architecture looks like including model type, layers, layer sizes, connectivity, etc.) Consider including a diagram and/or table describing the final model.
+#### Model architecture 
 
-My final model consisted of the following layers:
+I used [LeNet](http://yann.lecun.com/exdb/lenet/) for my model architecture. This model was designed for hand written and machine printed character recognition. So, the model could be a good fit for the traffic sign classification. To improve the accuracy for the model to work with traffic signs, I maked the first two convolution layer deeper, also increase the size of the fully-connected layers. In addition two dropout layers were added. The new architecture that I applied makes accuracy above %95. The final model consisted of the following layers:
 
 | Layer         		|     Description	        					| 
 |:---------------------:|:---------------------------------------------:| 
