@@ -123,36 +123,25 @@ The new transformed images concatenated with the original images and both used t
     
 ### Step 2: Design and Test a Model Architecture
 
-[Deep learning neural network models learn a mapping from input variables to an output variable](https://machinelearningmastery.com/how-to-improve-neural-network-stability-and-modeling-performance-with-data-scaling/). Data preparation involves using techniques such as the normalization and standardization to rescale input and output variables prior to training a neural network model. Different ways of preprocessing are available to improve the image qualities like use gray scale and normalization.
+[Deep learning neural network models learn a mapping from input variables to an output variable](https://machinelearningmastery.com/how-to-improve-neural-network-stability-and-modeling-performance-with-data-scaling/). Data preparation involves using techniques such as the normalization and standardization to rescale input and output variables prior to training a neural network model. Different ways of preprocessing are available to improve the image qualities like use gray scale and normalization. Min-max normalizationis one of the most common ways to normalize data. For every feature, the minimum value of that feature gets transformed into a 0, the maximum value gets transformed into a 1, and every other value gets transformed into a decimal between 0 and 1.
 
-As a first step, I decided to convert the images to grayscale and second I applied min-max normalization.
-Min-max normalizationis one of the most common ways to normalize data. For every feature, the minimum value of that feature gets transformed into a 0, the maximum value gets transformed into a 1, and every other value gets transformed into a decimal between 0 and 1.
+
+As a first step, I decided to convert the images to grayscale
 
 ```pyhton
-#Normalized Data 'x'
-
-normalized (x) = (x-min(x))/(max(x)-min(x))
+  # RGB to gray scale
+  gray = cv2.cvtColor(cv2.cvtColor(img, cv2.COLOR_RGB2GRAY), cv2.COLOR_GRAY2RGB)
 ```
+As a last step, I normalized the image data
 
+```pyhton
+  # Normalized Data 'x'
+  normalized (x) = (x-min(x))/(max(x)-min(x))
+```
+I decided to generate additional data and concatenate them to the original data set.
 Here is an example of a traffic sign image after grayscaling and normalization.
 
-![alt text][img5]
-
-
-
-![alt text][image2]
-
-As a last step, I normalized the image data because ...
-
-I decided to generate additional data because ... 
-
-To add more data to the the data set, I used the following techniques because ... 
-
-Here is an example of an original image and an augmented image:
-
-![alt text][image3]
-
-The difference between the original data set and the augmented data set is the following ... 
+![alt text][img4]
 
 
 #### 2. Describe what your final model architecture looks like including model type, layers, layer sizes, connectivity, etc.) Consider including a diagram and/or table describing the final model.
